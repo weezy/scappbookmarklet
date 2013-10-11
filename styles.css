@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*********************************************************************
+
+Author: 		Wes Barnes
+Date:			11/01/10
+Description:	global stylesheet
+File:			styles.css
+Site:			http://www.wesleybarnes.com
+
+History:
+
+*********************************************************************
+
+Sections:
+				__layout__
+				
+
+
+*********************************************************************/
+
+/**************Remove*********************/
+a.nav_topLayerLink:link{
+	color:#8D8C75; 
+	text-decoration: none; 
+	font-weight:normal;
+}
+
+/****** __layout__ ******/
+html {
+	overflow-x: hidden;
+}
+
+body{
+	font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font-size:12px;
+	line-height:18px;
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	color:#333;
+}
+
+a:link, a:active, a:visited {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+
+h2 {
+	float:left; 
+	clear:both;
+	padding:8px 5px;
+	
+	font-size:18px;
+}
+
+#page-container {
+	width:100%;	
+}
+
+#page-inner-container {
+	width:500px; 
+	margin:150px auto 0px ;
+}
+
+#page-inner-container {
+	 display:none;
+}
+
+#flickr-image-container {
+	border:0px #F00 dotted;
+	margin:50px auto;
+	width:240px;
+	height:240px;
+	/*display:none;*/
+}
+
+.dot {
+	height:1px;
+	width:1px;
+	background-color:#000;
+	border:1px #000 solid;
+	/*
+	border-radius:5px;
+	-moz-border-radius: 5px;
+	*/
+} 
+
+#background-image-container {
+	position:absolute;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	z-index:-1;
+}
+
+#background-image {
+	width:100%;
+	z-index:-1;
+}
+
+
+#logo-inner-container {
+	position:fixed;	
+	display:none;
+	z-index:2;
+	background-color:#FFF;
+	top:0px;
+	right:0px;
+}
+
+#away-title {
+	position:fixed;	
+	display:block;
+	z-index:3;
+	top:100px;
+	left:100px;	
+}
+
+
+#away-title p {
+	font-family:"Arial Black", Gadget, sans-serif;
+	color:#FFF;
+	font-size:62px;
+	line-height:62px;
+}
+
+
+#away-message {
+	position:fixed;	
+	display:none;
+	z-index:3;
+	top:350px;
+	left:100px;
+	text-align:right;
+}
+
+#away-message p {
+	font-family:"Arial Black", Gadget, sans-serif;
+	color:#FFF;
+	background-color:#C06;	
+	font-size:36px;
+	line-height:36px;
+	padding:0px 5px;
+	height:42px;
+	display:inline-block;
+	clear:both;
+}
